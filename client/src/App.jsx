@@ -128,7 +128,7 @@ const App = () => {
     const username = result.value;
     setPlayerName(username);
 
-    const newSocket = io("https://tic-tac-toe-multiplayer-afye.onrender.com", {
+    const newSocket = io("https://tictactoe-bted.onrender.com", {
       autoConnect: true,
     });
 
