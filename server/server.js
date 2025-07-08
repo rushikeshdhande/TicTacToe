@@ -4,7 +4,7 @@ import { Server } from "socket.io";
 const httpServer = createServer();
 const io = new Server(httpServer, {
   cors: {
-    origin: "https://tic-tac-toe-multiplayer-live.onrender.com", // ✅ FIXED: removed trailing slash
+    origin: "https://tictactoe-m81a.onrender.com/", // ✅ FIXED: removed trailing slash
     methods: ["GET", "POST"]
   }
 });
