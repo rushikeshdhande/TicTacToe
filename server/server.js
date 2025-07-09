@@ -16,7 +16,7 @@ io.on("connection", (socket) => {
   allUsers[socket.id] = {
     socket: socket,
     online: true,
-    playing: false, // ✅ FIXED: default initialized
+    playing: false, 
   };
 
   socket.on("request_to_play", (data) => {
