@@ -1,17 +1,17 @@
 {
-  "name": "tic-tac-toe-server", // Project name
-  "version": "1.0.0", // Project version
-  "main": "server.js", // Entry point file
-  "type": "module", // Use ES modules (import/export syntax)
+  "name": "tic-tac-toe-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "node server.js", // Script to run the server
-    "dev": "nodemon server.js" // Script to run the server in development mode with auto-reload
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
-    "http": "^0.0.1-security", // Minimal http module (placeholder; not recommended for real HTTP handling)
-    "socket.io": "^4.7.3" // WebSocket library for real-time communication
+    "http": "^0.0.1-security",
+    "socket.io": "^4.7.3"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10" // Dev tool to auto-restart server on code changes
+    "nodemon": "^3.1.10"
   }
 }
