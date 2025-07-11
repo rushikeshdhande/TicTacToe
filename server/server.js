@@ -34,7 +34,7 @@ io.on("connection", (socket) => {
     }
 
     if (opponentPlayer) {
-      // ✅ mark both players as playing
+    
       currentUser.playing = true;
       opponentPlayer.playing = true;
 
