@@ -48,6 +48,7 @@ io.on("connection", (socket) => {
         playingAs: "circle",
       });
 
+
       opponentPlayer.socket.emit("OpponentFound", {
         opponentName: currentUser.playerName,
         playingAs: "cross",
