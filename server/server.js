@@ -68,8 +68,7 @@ io.on("connection", (socket) => {
     } else {
       currentUser.socket.emit("OpponentNotFound");
     }
-  });
-
+  }); 
   socket.on("disconnect", () => {
     const currentUser = allUsers[socket.id];
     if (!currentUser) return;
