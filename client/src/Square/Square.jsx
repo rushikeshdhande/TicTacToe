@@ -81,7 +81,6 @@ const Square = ({
           sign: myCurrentPlayer,
         },
       });
-
       setCurrentPlayer(currentPlayer === "circle" ? "cross" : "circle");
 
       setGameState((prevState) => {
@@ -111,5 +110,4 @@ const Square = ({
     </div>
   );
 };
-
 export default Square;
