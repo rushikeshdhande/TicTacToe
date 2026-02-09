@@ -9,7 +9,6 @@ const renderFrom = [
   [4, 5, 6],
   [7, 8, 9],
 ];
-
 const App = () => {
   const [gameState, setGameState] = useState(renderFrom);
   const [currentPlayer, setCurrentPlayer] = useState("circle");
@@ -20,7 +19,6 @@ const App = () => {
   const [playerName, setPlayerName] = useState("");
   const [opponentName, setOpponentName] = useState(null);
   const [playingAs, setPlayingAs] = useState(null);
-
   const checkWinner = () => {
     // row dynamic
     for (let row = 0; row < gameState.length; row++) {
@@ -32,7 +30,6 @@ const App = () => {
         return gameState[row][0];
       }
     }
-
     // column dynamic
     for (let col = 0; col < gameState.length; col++) {
       if (
@@ -43,7 +40,6 @@ const App = () => {
         return gameState[0][col];
       }
     }
-
     if (
       gameState[0][0] === gameState[1][1] &&
       gameState[1][1] === gameState[2][2]
