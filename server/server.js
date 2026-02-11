@@ -1,6 +1,5 @@
 import { createServer } from "http";
 import { Server } from "socket.io";
-
 const httpServer = createServer();
 const io = new Server(httpServer, {
   cors: {
@@ -8,7 +7,6 @@ const io = new Server(httpServer, {
     methods: ["GET", "POST"]
   }
 });
-
 const allUsers = {};
 const allRooms = [];
 
@@ -18,23 +16,22 @@ io.on("connection", (socket) => {
     online: true,
     playing: false, 
   };
-
   socket.on("request_to_play", (data) => {
     const currentUser = allUsers[socket.id];
     currentUser.playerName = data.playerName;
 
-    let opponentPlayer;
+   let opponentPlayer;
 
     for (const key in allUsers) {
-      const user = allUsers[key];
+     const user = allUsers[key];
       if (user.online && !user.playing && socket.id !== key) {
         opponentPlayer = user;
-        break;
+       break;
       }
     }
 
     if (opponentPlayer) {
-    
+   
       currentUser.playing = true;
       opponentPlayer.playing = true;
 
