@@ -9,7 +9,6 @@ const io = new Server(httpServer, {
 });
 const allUsers = {};
 const allRooms = [];
-
 io.on("connection", (socket) => {
   allUsers[socket.id] = {
     socket: socket,
@@ -19,7 +18,6 @@ io.on("connection", (socket) => {
   socket.on("request_to_play", (data) => {
     const currentUser = allUsers[socket.id];
     currentUser.playerName = data.playerName;
-
    let opponentPlayer;
 
     for (const key in allUsers) {
