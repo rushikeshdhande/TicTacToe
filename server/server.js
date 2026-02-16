@@ -43,12 +43,10 @@ io.on("connection", (socket) => {
         playingAs: "circle",
       });
 
-
       opponentPlayer.socket.emit("OpponentFound", {
         opponentName: currentUser.playerName,
         playingAs: "cross",
       });
-
       currentUser.socket.on("playerMoveFromClient", (data) => {
         opponentPlayer.socket.emit("playerMoveFromServer", {
           ...data,
