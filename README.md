@@ -1,25 +1,30 @@
-# 🎮 Tic Tac Toe Multiplayer Game
+# Tic Tac Toe Multiplayer Game
 
-A real-time multiplayer Tic Tac Toe game built using React, Node.js, and Socket.io, enabling players to compete online with live move synchronization.
+A real-time multiplayer Tic Tac Toe game built using React, Node.js, and Socket.io that allows players to compete online with synchronized moves.
 
-## 🚀 Live Demo
-🌐 Play Now: https://tictactoe-m81a.onrender.com/
+## Live Demo
 
-## 🔧 Tech Stack
-- **Frontend:** React + Vite  
-- **Backend:** Node.js + Express + Socket.io  
-- **Deployment:** Render  
+Play the game: https://tictactoe-m81a.onrender.com/
 
-## 📦 Features
-- Real-time multiplayer gameplay using WebSockets  
-- Live move synchronization between players  
-- Matchmaking system for online play  
-- Fully deployed and mobile-responsive UI  
+## Tech Stack
 
-## 📁 Project Setup
+**Frontend:** React + Vite
+**Backend:** Node.js + Express + Socket.io
+**Deployment:** Render
+
+## Features
+
+* Real-time multiplayer gameplay powered by WebSockets
+* Instant move synchronization between connected players
+* Online matchmaking system to connect players automatically
+* Responsive interface that works smoothly on desktop and mobile devices
+
+## Project Setup
+
 ```bash
 # Install dependencies
 npm install
 
 # Run development server
 npm run dev
+```
