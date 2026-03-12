@@ -20,7 +20,6 @@ Play the game: https://tictactoe-m81a.onrender.com/
 * Responsive interface that works smoothly on desktop and mobile devices
 
 ## Project Setup
-
 ```bash
 # Install dependencies
 npm install
