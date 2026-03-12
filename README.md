@@ -1,5 +1,4 @@
 # Tic Tac Toe Multiplayer Game
-
 A real-time multiplayer Tic Tac Toe game built using React, Node.js, and Socket.io that allows players to compete online with synchronized moves.
 
 ## Live Demo
